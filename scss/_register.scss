@@ -1,0 +1,26 @@
+#register-form {
+    background-color: #f2f2f2;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 40%;
+        height: 60vh;
+        border-radius: 10px;
+        background-color: #f1f1f1;
+        border: 2px solid #f8f9fa;
+        filter: drop-shadow(1px 1px 25px #fff);
+    }
+
+    div {
+        width: 70%;
+        margin: auto; 
+    }
+  
+    button {
+        width: 100%;
+    }
+}

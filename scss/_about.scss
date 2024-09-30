@@ -1,0 +1,85 @@
+#about-main {
+    background: url(../img/about-main-bg.jpg);
+    background-repeat: no-repeat;
+
+    h4 {
+        text-align: center;
+        width: 95%;
+        font-size: 2rem; 
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: sans-serif;
+        color: #2f0b6c;
+        display: inline-block;  
+        margin: 2rem 0;
+    }
+
+
+    .about-container {
+        display: flex;
+        align-items: center;
+
+        .about-col {
+
+            img {
+                height: 80vh;
+            }
+        }
+
+        .about-desc {
+            
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.4rem;
+                width: 60%;
+                margin: 1rem auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#about-references {
+
+    #references-container {
+        padding: 3rem 0;
+
+        .references-text {
+            text-align: center;
+            padding: 2rem 0;
+
+            h1 {
+                color: #000;
+                text-transform: uppercase;
+            }
+
+            .border-bottom {
+                width: 80px;
+                height: 3px;
+                margin: auto;
+                background-color: #2f0b6c;
+            }
+
+        }
+
+            .marquee-content {
+                filter: blur(0px);
+                z-index: 999 !important;
+                position: absolute;
+                bottom: 0;
+            }
+
+            &::selection {
+                background: transparent;
+            }
+
+            img {
+                width: 100px;
+                margin: 0 1rem;
+                pointer-events: none;
+            }
+        }
+    }

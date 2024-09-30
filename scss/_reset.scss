@@ -1,0 +1,15 @@
+#reset-main {
+    background-color: #f2f2f2;
+    padding: 2rem;
+
+    form {
+        border: 2px solid #f5f5f5;
+        border-radius: 20px;
+        filter: drop-shadow(1px 1px 25px #fff); 
+        background-color: #fff;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}   

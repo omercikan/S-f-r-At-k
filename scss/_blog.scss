@@ -1,0 +1,133 @@
+#blog-main {
+    background-color: #f2f2f2;
+
+    .border-bottom {
+        width: 50px;
+        height: 3px;
+        margin: auto;
+        background-color: #648b32;
+    }
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 25px 100px;
+
+        div {
+            background-color: #fff;
+            padding: .5rem;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover img {
+                scale: 1.05;
+            }
+
+            img { 
+                object-fit: cover;
+                width: 100%;
+                height: 250px;
+                transition: all .6s;
+            }
+
+            .blog-writer {
+                
+                ul {
+                    padding: 0;
+                }
+            }
+
+            .blog-content {
+
+                button {
+                    padding: 5px 30px !important;
+                    background-color: #000;
+                    border: 2px solid #000;
+                    border-radius: 30px;
+                    transition: all .6s;
+
+                    &:hover {
+                        background-color: #f2f2f2;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                button:hover a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// subscribe menu blog
+#subscribe-blog {
+    background-color: #f2f2f2;
+    padding: 3rem 0;
+
+    .subscribe-blog {
+        background-color: #fff;
+        width: 55%;
+        height: 55vh;
+        margin: auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        filter: drop-shadow(2px 2px 20px #fff);
+
+    form { 
+
+        &::selection {
+            background: transparent;
+        }
+
+        label { 
+            position: relative;
+            right: 49%;
+            padding: 10px;
+            transition: all .6s;
+            pointer-events: none;
+            margin: 5px;
+            padding: 0 1rem;
+        }
+
+        input { 
+            width: 50%; 
+            padding: 10px 15px; 
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            border: 2px solid #648b32; 
+            margin-left: 9%; 
+        }
+
+        input:valid ~ label, 
+        input:focus ~ label {
+            transform: translateY(-23px);
+            background-color: #fff;
+            padding: 0 1rem;
+            color: #648b32;
+        }
+
+        button {
+            background-color: #648b32;
+            border: 2px solid #648b32;
+            color: #fff;
+            width: 50%;
+            border-radius: 30px;
+            padding: 10px;
+            margin-top: 1rem;
+
+            &:hover {
+                background-color: darken(#648b32, 5%);
+                border: 2px solid darken(#648b32, 5%);
+            }
+        }
+    }
+    }
+}

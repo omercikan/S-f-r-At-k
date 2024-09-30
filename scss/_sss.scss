@@ -1,0 +1,48 @@
+#sss-main {
+    background: #f2f2f2;
+}
+
+.sss-container {
+    div {
+        text-align: center;
+
+        button {
+            width: 75%;
+            margin-bottom: 1rem;
+            border: none;
+            padding: 5px 10px;
+            text-align: left;
+            position: relative;
+            transition: all .6s; 
+            height: 55px;  
+            background-color: #fff;
+            filter: drop-shadow(1px 1px 5px white);
+
+            i {
+                position: absolute;
+                right: 2rem;
+                top: 1rem;
+                font-size: 24px;
+                transition: all .6s linear;
+            }
+
+        }
+
+        button:focus p {
+            visibility: visible;
+        }
+
+        button:focus {
+            height: 180px;
+        }
+
+        button:focus i {
+            transform: rotate(180deg);
+        }
+
+        p{
+            visibility: hidden;
+        }
+
+    }
+}
